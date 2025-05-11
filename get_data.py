@@ -1,6 +1,7 @@
 import requests
 import re
 import random
+from datetime import datetime
 
 descriptors = {"up": ["up", "soaring", "very good", "positively amazing", "soars"], "down": ["down", "falls", "crashes", "tanks", "plummets"]}
 
@@ -66,7 +67,7 @@ with open("index.html", "w") as index:
                 as
                 <span id="news_headline">{headline}</span>
             </p>
-            <p id="credits">Inspired by <a href="https://www.smbc-comics.com/comic/markets">SMBC 'markets'</a>. Data from <a href="https://www.londonstockexchange.com">London stack exchange</a> and <a href="https://www.bbc.co.uk/">BBC News</a>. For entertainment only - data is out of date.</p>
+            <p id="credits">Inspired by <a href="https://www.smbc-comics.com/comic/markets">SMBC 'markets'</a>. Data from <a href="https://www.londonstockexchange.com">London stack exchange</a> and <a href="https://www.bbc.co.uk/">BBC News</a>. For entertainment only - data is out of date. Page generated on {datetime.today().strftime('%d/%m/%Y %H:%M:%S')}</p>
         </body>
     </html>
     ''')
