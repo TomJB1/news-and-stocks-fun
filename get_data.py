@@ -47,12 +47,13 @@ with open("index.html", "w") as index:
                 text-align: center;
                 background: #fff9d1;
                 font-size: 35px;
+                font-family: sans-serif;
             }}
            #market_direction, #news_headline {{
                 display: block;
-                font-variant-caps: all-small-caps;
                 max-width: 20em;
-                margin: auto;
+                text-transform: uppercase;
+                margin: 1em auto;
            }}
            #credits {{
                font-size: 16px;
