@@ -33,7 +33,9 @@ request = requests.get('https://feeds.bbci.co.uk/news/rss.xml')
 
 headline = random.choice(re.findall(r"<title>(.*?)</title>", request.text.replace("<![CDATA[", "").replace("]]>", "").replace("<title>BBC News</title>", "")))
 
-with open("index.html", "w") as index:
+
+path = "/var/www/news-and-stocks-fun/index.html"
+with open(path, "w") as index:
     index.write(f'''<!DOCTYPE html>
     <html lang="en">
         <head>
