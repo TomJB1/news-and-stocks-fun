@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    background: #fff9d1;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+#market_direction, #news_headline {
+    display: block;
+    max-width: 20em;
+    text-transform: uppercase;
+    margin: 1em auto;
+}
+
+#credits {
+    font-size: 16px;
+    margin-top: 90vh;
+}

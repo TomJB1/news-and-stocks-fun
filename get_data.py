@@ -41,26 +41,9 @@ with open("index.html", "w") as index:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="Tom Brandis website homepage">
             <title>The Financial Headline Generator by Tom Brandis</title>
+            <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <style>
-            body {{
-                text-align: center;
-                background: #fff9d1;
-                font-size: 35px;
-                font-family: sans-serif;
-            }}
-           #market_direction, #news_headline {{
-                display: block;
-                max-width: 20em;
-                text-transform: uppercase;
-                margin: 1em auto;
-           }}
-           #credits {{
-               font-size: 16px;
-               margin-top: 90vh;
-           }}
-            </style>
             <p>
                 Stock market
                 <span id="market_direction">{stock_descriptor}</span>
